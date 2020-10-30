@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Simple Gradients</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-fixed-top mb-2">
+      <div class="container">
+        <ul class="nav navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./assets/img/logo.png" alt="logo" class="rounded"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <div class="gradient" id="gradient"></div>
+      </div>
+      <ul class="nav nav-tabs justify-content-center mb-0 mt-4">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#simple"
+            >Simple Gradient</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#css">CSS</a>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-2">
+        <div id="simple" class="tab-pane active">
+          <h1 class="font-weight-light text-center">Simple gradient</h1>
+          <p class="font-weight-light text-center">
+            Create a simple gradient by selecting two colors
+          </p>
+          <div class="row justify-content-center">
+            <div class="w-50">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <input
+                    type="color"
+                    id="color-1"
+                    value="#4eb1ac"
+                    class="colorPick"
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="form-control colorPick"
+                  value="#4eb1ac"
+                  aria-label="color-1-value"
+                  id="color-1-value"
+                  readonly="readonly"
+                />
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <input
+                    type="color"
+                    id="color-2"
+                    value="#664db3"
+                    class="colorPick"
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="form-control colorPick"
+                  value="#664db3"
+                  aria-label="color-2-value"
+                  id="color-2-value"
+                  readonly="readonly"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="direction"
+                    >Direction</label
+                  >
+                </div>
+                <select class="custom-select" id="direction">
+                  <option selected value="top">Top</option>
+                  <option value="top right">Top right</option>
+                  <option value="top left">Top left</option>
+                  <option value="bottom">Bottom</option>
+                  <option value="bottom right">Bottom right</option>
+                  <option value="bottom left">Bottom left</option>
+                  <option value="right">Right</option>
+                  <option value="left">Left</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="css" class="tab-pane fade">
+          <div class="row justify-content-center">
+            <div class="w-50">
+              <div class="form-group">
+                <h1 class="font-weight-light text-center mx-4">
+                  Your CSS Code:
+                </h1>
+                <textarea
+                  class="form-control"
+                  id="cssCode"
+                  rows="4"
+                  value=""
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <span>Created by SaintCod3 (2020)</span>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

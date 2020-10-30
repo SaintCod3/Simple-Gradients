@@ -1,0 +1,23 @@
+:root {
+  --first-color: #4eb1ac;
+  --second-color: #664db3;
+  --direction: top;
+}
+.gradient {
+  width: 500px;
+  height: 500px;
+  background-image: linear-gradient(
+    to var(--direction),
+    var(--first-color),
+    var(--second-color)
+  );
+  -webkit-box-shadow: 5px 3px 12px -2px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 5px 3px 12px -2px rgba(173, 173, 173, 1);
+  box-shadow: 5px 3px 12px -2px rgba(173, 173, 173, 1);
+}
+.colorPick {
+  width: 5vh;
+  height: 5vh;
+  border: 1px solid black;
+  margin: 2px;
+}
